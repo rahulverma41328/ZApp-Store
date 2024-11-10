@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivSignImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvTag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:layout_below="@+id/ivSignImg"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="24sp"
+            android:layout_marginTop="-100dp"
+            android:textColor="@color/text_main"/>
+
+        <TextView
+            android:id="@+id/tvTag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by creating a free account"
+            android:textColor="@color/text_main"
+            android:textSize="14sp"
+            android:layout_below="@+id/tvTag1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_light"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlEntity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/ivSignImg"
+            android:layout_marginEnd="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:id="@+id/rlEntity3">
+
+                <ImageView
+                    android:backgroundTint="@color/purple"
+                    android:id="@+id/ivServiceUser"
+                    android:layout_width="80dp"
+                    android:padding="10dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/service_user_icon"
+                    android:background="@drawable/white_background"/>
+
+                <ImageView
+                    android:id="@+id/ivServiceProvider"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/service_provider_icon"
+                    android:background="@drawable/white_background"
+                    android:padding="10dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:layout_below="@id/ivServiceUser"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_main"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service"
+                    android:layout_marginEnd="15dp"
+                    android:layout_below="@id/ivServiceUser"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/text_main"/>
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_below="@+id/rlEntity3"
+                android:id="@+id/edName"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Full name"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/password_icon"
+                android:textColor="@color/text_main"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:background="@drawable/white_background"
+                style="@style/editText"/>
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edName"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter your email"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/email_icon"
+                android:textColor="@color/text_main"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:background="@drawable/white_background"
+                style="@style/editText"/>
+
+            <EditText
+                android:id="@+id/edPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edEmail"
+                android:layout_centerHorizontal="true"
+                android:hint="Phone no."
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/phone_icon"
+                android:textColor="@color/text_main"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:background="@drawable/white_background"
+                style="@style/editText"/>
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Password"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/password_icon"
+                android:textColor="@color/text_main"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/edPhoneNo"
+                android:background="@drawable/white_background"
+                style="@style/editText"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlEntity"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/rlEntity2">
+
+            <CheckBox
+                android:id="@+id/checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="by checking you agree our terms and condition"
+                android:textColor="@color/purple"
+                android:textSize="10sp"
+                android:layout_toEndOf="@+id/checked"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_medium"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_background"
+            android:text="Register"
+            android:backgroundTint="@color/purple"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/rlEntity2"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member? Login now"
+            android:textColor="@color/text_main"
+            android:textSize="14sp"
+            android:layout_below="@+id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_light"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
