@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.view.WindowInsets
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.zappstore.MainActivity
+import com.example.zappstore.ui.dashboard.MainActivity
 import com.example.zappstore.R
 import com.example.zappstore.databinding.FragmentRegisterScreenBinding
 

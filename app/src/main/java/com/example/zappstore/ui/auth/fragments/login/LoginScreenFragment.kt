@@ -10,9 +10,8 @@ import android.view.WindowInsets
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.zappstore.MainActivity
+import com.example.zappstore.ui.dashboard.MainActivity
 import com.example.zappstore.R
-import com.example.zappstore.databinding.ActivityLoginRegisterBinding
 import com.example.zappstore.databinding.FragmentLoginScreenBinding
 
 class LoginScreenFragment: Fragment(R.layout.fragment_login_screen) {
