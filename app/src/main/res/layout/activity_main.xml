@@ -11,6 +11,7 @@
 
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_bold">
@@ -44,8 +45,10 @@
     <fragment
         android:id="@+id/dashboardHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
         app:navGraph="@navigation/dashboard_graph"
+        android:layout_above="@+id/bottomNavigation"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
         />
