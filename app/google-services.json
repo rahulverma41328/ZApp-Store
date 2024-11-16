@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376620490297",
+    "project_id": "zapp-store-4e8ac",
+    "storage_bucket": "zapp-store-4e8ac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376620490297:android:2b3a63333203069a4337e8",
+        "android_client_info": {
+          "package_name": "com.example.zappstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEnl53Ux9PUD-g5uhMT4RPiv9NhfD8dCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

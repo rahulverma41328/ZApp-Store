@@ -12,8 +12,6 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
     private lateinit var binding: FragmentProfileBinding
 
-
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

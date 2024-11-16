@@ -23,20 +23,23 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
 
         val controller = findNavController(R.id.dashboardHostFragment)
         binding.bottomNavigation.setupWithNavController(controller)
 
-        binding.bottomNavigation.setOnNavigationItemSelectedListener {
-            when( it.itemId){
-                R.id.homeFragment -> binding.tvTitle.text = "ZAppStore"
-                R.id.chatFragment -> binding.tvTitle.text = "Chat"
-                R.id.ordersFragment -> binding.tvTitle.text = "Orders"
-                R.id.profileFragment -> binding.tvTitle.text = "Profile"
+        controller.addOnDestinationChangedListener{_,destination,_ ->
+            when (destination.id) {
+                R.id.homeFragment -> updateTitle("Home")
+                R.id.chatFragment -> updateTitle("Chat")
+                R.id.ordersFragment -> updateTitle("Orders")
+                R.id.profileFragment -> updateTitle("Profile")
             }
-            true
         }
+    }
 
+    private fun updateTitle(s: String) {
+        binding.tvTitle.text = s
     }
 }

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:background="@color/app_bg_white"
+    android:layout_marginBottom="10dp"
     android:layout_height="match_parent">
 
     <RelativeLayout
@@ -12,8 +13,8 @@
 
         <ImageView
             android:id="@+id/ivSignImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:src="@drawable/sign_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"/>

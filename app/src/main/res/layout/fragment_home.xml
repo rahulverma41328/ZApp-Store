@@ -16,10 +16,10 @@
             android:id="@+id/tvUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello, Rahul Verma"
             android:fontFamily="@font/montserrat_medium"
+            android:text="Hello, Rahul Verma"
             android:textColor="@color/purple"
-            android:textSize="14sp"/>
+            android:textSize="12sp" />
 
 
         <TextView
@@ -28,9 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvUsername"
             android:layout_marginTop="10dp"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textColor="@color/text_main"
-            android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/montserrat_medium"
             android:text="What Are You\nLooking For Today"/>
 
         <SearchView
@@ -47,6 +47,7 @@
             android:layout_below="@+id/searchBox"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
+            android:layout_marginStart="-10dp"
             android:layout_height="wrap_content"/>
 
         <TextView
@@ -65,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvTag2"
+            android:layout_marginStart="-10dp"
             android:layout_marginTop="20dp"/>
 
 
