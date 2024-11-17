@@ -26,8 +26,8 @@ class RegisterScreenFragment: Fragment(R.layout.fragment_register_screen) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val windowInsetsController = requireActivity().window.insetsController
-        windowInsetsController?.hide(WindowInsets.Type.statusBars())
+        //val windowInsetsController = requireActivity().window.insetsController
+        //windowInsetsController?.hide(WindowInsets.Type.statusBars())
 
     }
     override fun onCreateView(
