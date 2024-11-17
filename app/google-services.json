@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "514751095722",
+    "project_id": "zappstore-a8d8b",
+    "storage_bucket": "zappstore-a8d8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514751095722:android:50a164d272a2e6d243c1d3",
+        "android_client_info": {
+          "package_name": "com.example.zappstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNVetNGet778ThSP8-3n4XjOliMlV9Hlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

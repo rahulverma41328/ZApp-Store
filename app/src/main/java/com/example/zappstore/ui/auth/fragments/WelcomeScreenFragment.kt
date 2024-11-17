@@ -20,12 +20,11 @@ class WelcomeScreenFragment: Fragment(R.layout.fragment_welcome_screen) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //val windowInsetsController = requireActivity().window.insetsController
-        //windowInsetsController?.hide(WindowInsets.Type.statusBars())
-
 
         val runnable = Runnable {
+
             findNavController().navigate(R.id.action_welcomeScreenFragment_to_informationScreen1Fragment)
+
         }
         handler.postDelayed(runnable,SPLASH_TIMER)
     }

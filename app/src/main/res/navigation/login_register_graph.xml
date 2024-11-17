@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_informationScreen1Fragment_to_informationScreen2Fragment"
             app:destination="@id/informationScreen2Fragment" />
+        <action
+            android:id="@+id/action_informationScreen1Fragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/informationScreen2Fragment"
